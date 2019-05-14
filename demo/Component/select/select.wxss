@@ -1,0 +1,61 @@
+.com-selectBox{
+    width: 120rpx;
+}
+.com-sContent{  
+    background: white;
+    font-size: 16rpx;
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+}
+.com-sImg{
+    position: absolute;
+    right: 10rpx;
+    top: 11rpx;
+    width: 16rpx;
+    height: 16rpx;
+    transition: all .3s ease;
+}
+.com-sTxt{
+  width:46px;
+height:23px;
+font-size:24rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(175,175,175,1);
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding:0 20px 0 6px;
+}
+.com-sList{
+    background: white;
+    width: inherit;
+    position: absolute;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    box-sizing: border-box;
+    z-index: 3;
+    max-height: 120px;
+    overflow: auto;
+}
+.com-sItem{
+  width:46px;
+font-size:24rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(175,175,175,1);
+
+    height: 30rpx;
+    line-height: 30rpx;
+    border-top: 1px solid #e2e2e2;
+    padding: 0 6rpx;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.com-sItem:first-child{
+    border-top: none;
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/apply/apply",
+    "pages/admin_apply/admin_apply",
+    "pages/index/index",
+    "pages/admin/admin",
+    "pages/student/student",
+    "pages/admin-examine-apply/admin-examine-apply",
+    "pages/stu-apply-class/stu-apply-class",
+    "pages/stu-check-apply/stu-check-apply",
+    "pages/personal/personal",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#797979",
+    "selectedColor": "#0E7CFF",
+    "list": [
+      {
+        "pagePath": "pages/student/student",
+        "text": "首页",
+        "iconPath": "pages/images/index_1.png",
+        "selectedIconPath": "pages/images/index_2.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "pages/images/person_1.png",
+        "selectedIconPath": "pages/images/person_2.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#0e7cff",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "南苑教室申请"
+  },
+  "sitemapLocation": "sitemap.json"
+}

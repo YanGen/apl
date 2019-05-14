@@ -1,0 +1,99 @@
+<!-- 学生申请教室 -->
+<scroll-view class="all" scroll-y style="height: 100%;" scroll-top="{{scrollTop}}">
+  <form bindsubmit="formSubmit">
+    <view class="infor">
+      <text class="infor-name">申请人</text>
+      <input class="infor-input input-no-change " value="张三" name="applyName" type="text" disabled="false" />
+    </view>
+    <view class="infor">
+      <text class="infor-name">负责人</text>
+      <input class="infor-input " name="principalName" type="text" />
+    </view>
+    <view class="infor">
+      <text class="infor-name">联系电话</text>
+      <input class="infor-input " name="phone" type="number" placeholder="请输入长号" placeholder-class="input-text" />
+    </view>
+    <view class="infor">
+      <text class="infor-name ">申请间数</text>
+      <input class="infor-input input-no-change" value="1" type="text" disabled="false" />
+    </view>
+    <picker mode="multiSelector" bindcolumnchange="roomBindMultiPickerColumnChange" value="{{roomMultiIndex}}" range="{{roomMultiArray}}">
+
+    <view class="infor">
+      <text class="infor-name">申请教室类型</text>
+      <text class="sanjiao">></text>
+      <input class="infor-input input-choice" value="{{roomValue}}" name="roomType" bindtap="onRoom" type="text" placeholder="---点击选择---" placeholder-class="input-text" disabled="false"  />
+    </view>
+    </picker>
+    <view class="infor">
+      <text class="infor-name">教室房间号</text>
+      <input class="infor-input " name="roomNumber" type="number" placeholder="例：305" placeholder-class="input-text"/>
+    </view>
+    <picker mode="date" value="{{useStartDate}} " start="{{startDateChose}}" end="2019-09-01" bindchange="bindStartDateChange">
+      <view class="infor">
+        <text class="infor-name">教室使用开始日期</text>
+        <text class="sanjiao">></text>
+        <input class="infor-input " name="useStartDate" value="{{useStartDate}}" type="text" placeholder="---点击选择---" placeholder-class="input-text" disabled="false" />
+      </view>
+    </picker>
+    <picker mode="date" value="{{useEndDate}}" start="{{startDateChose}}" end="2019-09-01" bindchange="bindEndDateChange">
+      <view class="infor">
+        <text class="infor-name">教室使用结束日期</text>
+        <text class="sanjiao">></text>
+        <input class="infor-input " name="useEndDate" value="{{useEndDate}}" type="text" placeholder="---点击选择---" placeholder-class="input-text" disabled="false" />
+      </view>
+    </picker>
+    <picker mode="time" value="{{useStartTimeDe}}" bindchange="bindStartTimeChange">
+      <view class="infor">
+        <text class="infor-name">教室使用开始时间</text>
+        <text class="sanjiao">></text>
+        <input class="infor-input " name="useStartTime" value="{{useStartTime}}" type="text" placeholder="---点击选择---" placeholder-class="input-text" disabled="false" />
+      </view>
+    </picker>
+    <picker mode="time" value="{{useEndTimeDe}}" bindchange="bindEndTimeChange">
+      <view class="infor">
+        <text class="infor-name">教室使用结束时间</text>
+        <text class="sanjiao">></text>
+        <input class="infor-input " name="useEndTime" value="{{useEndTime}}" type="text" placeholder="---点击选择---" placeholder-class="input-text" disabled="false" />
+      </view>
+    </picker>
+    <!-- 一级审批的滚动选择器 开始 -->
+    <picker mode="multiSelector" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="infor">
+        <text class="infor-name">一级审批</text>
+        <text class="sanjiao">></text>
+        <input class="infor-input input-choice" name="admin" value="{{adminValue}}" type="text" placeholder="---点击选择---" placeholder-class="input-text" placeholder-class="input-text" disabled="false" bindtap="onAdmin" />
+      </view>
+    </picker>
+    <!-- 一级审批的滚动选择器 结束 -->
+    <view class="infor">
+      <text class="infor-name ">申请详细原因</text>
+      <textarea name="reason" hidden="{{hidReason}}" class="infor-input" id="" show-confirm-bar="{{false}}" cursor-spacing="50" contenteditable="{{true}}" placeholder="可备注部门/班级，申请的原因等" placeholder-class="input-text"></textarea>
+      <view class="area-con" wx:if="{{}}" focus="{{inputShowed}}"></view>
+    </view>
+    <button form-type="submit" class="submit-button" bindtap="submit">提交</button>
+  </form>
+  <!-- 给滚动选择器加上一层蒙版 开始 -->
+  <view class="mask-type" hidden="{{hitPicker}}" bindtap="onPicker">
+    <!-- 滑动选择器 -->
+    <picker-view indicator-style="height:50px;" value="{{value}}" bindchange="bingChange" indicator-class="picker-view-check" mask-class="picker-view-mask" catchtap="bumaopao">
+      <view class="design">
+        <button bindtap="onPickerDesign">确定</button>
+      </view>
+      <picker-view-column>
+        <view wx:for="{{pickerFors}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+      </picker-view-column>
+      <!-- 选择日期的滑动选择器 开始 -->
+      <!-- <picker-view-column hidden="{{hidDate1}}">
+        <view wx:for="{{pickerFors}}" wx:key="{{index}}" style="line-height: 50px">
+          <text>{{item}}</text>
+        </view>
+      </picker-view-column>
+      <picker-view-column hidden="{{hidDate2}}">
+        <view wx:for="{{weekFor}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+      </picker-view-column> -->
+      <!-- 选择日期的滑动选择器 结束 -->
+    </picker-view>
+  </view>
+  <!-- 给滚动选择器加上一层蒙版 结束 -->
+</scroll-view>

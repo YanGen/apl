@@ -1,0 +1,21 @@
+<view class="apply_admin">
+<view class='inquireBk'>
+    <view class="inquire">
+     <image class="inquireImage" src="../images/inquire.png"></image>
+      <input class="inquireText" placeholder="快速查询" />
+    </view>
+  </view>
+  <view class='massgesTitle'>
+    <view>序号</view>
+    <view>时间</view>
+    <view>申请单位</view>
+    <view>状态</view>
+  </view>
+  <view class="massges" wx:for="{{massges}}" wx:key="{{index}}">
+  <view class='item' bindtap='check' data-text="{{item.id}}">{{item.id}}</view>
+  <view class='item' bindtap='check' data-text="{{item.id}}">{{item.start}}</view>
+  <view class='item' bindtap='check' data-text="{{item.id}}">{{item.applyPerson}}</view>
+  <view class='item' wx:if="{{item.state=='已驳回'}}" id="pending" bindtap='check' data-text="{{item.id}}">{{item.state}}</view>
+  <view class='item' wx:else bindtap='check' data-text="{{item.id}}">{{item.state}}</view>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+ <view class='bk'>
+  <button class="btn"  bindtap="submit2">批审教室</button>
+  </view>

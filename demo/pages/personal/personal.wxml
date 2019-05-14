@@ -1,0 +1,26 @@
+<view class="personcenter">
+  <view class="person">
+    <image class="personImage" src="../images/photo.png"></image>
+    <view class="massge">
+      <view class="personName">Pigsney</view>
+      <view class="personId">161013016</view>
+    </view>
+    <navigator src="" open-type='switchTap'><image class="goright" src="../images/right_1.png"></image></navigator>
+  </view>
+  <view class="item">
+    <image class="itemImage" src="../images/personal_1.png"></image>
+    <view class="massge2">我的申请</view>
+    <navigator url="../apply/apply" open-type='redirectTo'><image class="goright" src="../images/right_2.png"></image></navigator>
+  </view>
+  <view class="item">
+    <image class="itemImage" src="../images/personal_2.png"></image>
+    <view class="massge2">申请教室须知</view>
+     <navigator src="" open-type='navigate'><image class="goright" src="../images/right_2.png"></image></navigator>
+  </view>
+  <view class="item">
+    <image class="itemImage" src="../images/personal_3.png"></image>
+    <view class="massge2">意见反馈</view>
+     <navigator src="" open-type='navigate'><image class="goright" src="../images/right_2.png"></image></navigator>
+  </view>
+   <button class="btn"  bindtap="submit">退出登录</button>
+</view>

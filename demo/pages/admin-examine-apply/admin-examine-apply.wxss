@@ -1,0 +1,47 @@
+.all {
+    /* padding: 20rpx; */
+
+    margin-top: 20rpx;
+}
+
+.infor{
+    width: 100%;
+    margin-left: 50rpx;
+    margin-top: 10rpx;
+
+}
+
+.img{
+    width: 40rpx;
+    height: 40rpx;
+    display: inline-block;
+    Vertical-align:middle;
+}
+
+.infor-name {
+    display: inline-block;
+    font-size: 30rpx;
+    margin-left: 30rpx;
+    margin-bottom: 16rpx;
+    font-size: 30rpx;
+    color:rgba(102, 102, 102, 1);
+}
+.infor-name .title{
+    font-weight:600;
+}
+
+
+.get-proof {
+    background-color: rgba(38, 137, 255, 1);
+    width: 360rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 100rpx;
+    font-size: 32rpx;
+}
+.re{
+    margin-top: 48rpx;
+}

@@ -1,0 +1,47 @@
+<!-- 学生查看申请 -->
+<scroll-view class="all" scroll-y style="height: 100%;" scroll-top="{{scrollTop}}">
+    <view class="all-infor">
+        <!-- 信息内容显示 开始 -->
+        <view class="infor">
+            <image class="img" src="../images/people.png"></image>
+            <text class="infor-name"><text class="title">申请人 :</text> {{applyPerson}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/zeren.png"></image>
+            <text class="infor-name"><text class="title">负责人 :</text> {{principalName}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/phone.png"></image>
+            <text class="infor-name"><text class="title">联系电话 :</text> {{applyPersonPhone}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/room.png"></image>
+            <text class="infor-name "><text class="title">教室 :</text>  {{room}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/admin.png"></image>
+            <text class="infor-name"><text class="title">一级审批 :</text> {{teacherName}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/reason.png"></image>
+            <text class="infor-name "><text class="title">申请详细原因 :</text> {{reason}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/strat.png"></image>
+            <text class="infor-name"><text class="title">开始时间 :</text> {{startTime}}</text>
+        </view>
+           <view class="infor">
+            <image class="img" src="../images/end.png"></image>
+            <text class="infor-name"><text class="title">结束时间 :</text> {{endTime}}</text>
+        </view>
+        <view class="infor">
+            <image class="img" src="../images/progress.png"></image>
+            <text class="infor-name "><text class="title">状态 :</text> {{status}}</text>
+        </view>
+        <!-- <view class="infor">
+            <text class="infor-name infor-room">获批教室: {{room}}</text>
+        </view> -->
+        <button class="get-proof" bindtap="pass">批准</button>
+        <button class="get-proof re" bindtap="no">驳回</button>
+    </view>
+</scroll-view>

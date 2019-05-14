@@ -1,0 +1,21 @@
+<view class="titleBar">
+
+  <navigator url="../personal/personal" open-type='switchTab'><view class="turnBack"><image class="goLeft" src="../images/left.png"></image></view></navigator>
+  <view class="title">申请列表</view>
+</view>
+<view class="showTable">
+  <view class='tableBox' >
+    <view class='rowTitle'>
+      <view >日期</view>
+      <view >教室</view>
+      <view>状态</view>
+    </view>
+    <view class="massges" wx:for="{{massges}}" >
+      <view class="column_1 column" bindtap='check' data-text="{{item.id}}">{{item.date}}</view>
+      <view class='column_3 column' bindtap='check' data-text="{{item.id}}">{{item.room}}</view>
+      <view class='column_2 column'  data-text="{{item.id}}" wx:if="{{item.status=='等待指定老师批准'}}" id="pending">{{item.status}}</view>
+      <view class='column_2 column' wx:else bindtap='check' data-text="{{item.id}}">{{item.status}}</view>
+    </view>
+  </view>
+    <view class="over">已经全部显示</view>
+</view>

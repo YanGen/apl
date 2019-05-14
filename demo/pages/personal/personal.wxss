@@ -1,0 +1,75 @@
+.personcenter{
+  background-color: #F7F7F7;
+  height: 1070rpx;
+}
+.person{
+  width: 100%;
+  height: 130rpx;
+  background-color: #0e7cff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 2px;
+}
+.massge{
+  display: felx;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 25rpx;
+}
+.personImage{
+  width: 96rpx;
+  height: 98rpx;
+  margin-left: 25rpx;
+}
+.personName{
+width:110rpx;
+height:29rpx;
+font-size:30rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(255,255,255,1);
+}
+.personId{
+width:117rpx;
+height:18rpx;
+font-size:22rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:#fff;
+margin-top: 15rpx;
+}
+.goright{
+    width: 15rpx;
+    height: 29rpx;
+    margin-left: 450rpx;
+}
+.itemImage{
+  width: 42rpx;
+  height: 42rpx;
+}
+.massge2{
+width:200rpx;
+height:30rpx;
+font-size:26rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(94,94,94,1);
+margin-left: 5rpx;
+}
+.btn{
+  width: 88%;
+  margin-top: 230rpx;
+  background-color:#79b1f3;
+  color: white;
+}
